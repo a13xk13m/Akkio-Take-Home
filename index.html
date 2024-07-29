@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="searchBar">
+        <label for="saturation">Saturation</label>
+        <input type="range" oninput="updateRangeValueDisplay('saturation', 'saturationDisplay')" class="searchInput"
+            id="saturation" name="saturation" min="0" max="100" value="50">
+        <a id="saturationDisplay">50%</a>
+
+        <label for="lightness">Lightness</label>
+        <input type="range" oninput="updateRangeValueDisplay('lightness', 'lightnessDisplay')" class="searchInput"
+            id="lightness" name="saturation" min="0" max="100" value="50">
+        <a id="lightnessDisplay">50%</a>
+        <input type="submit" value="Generate Swatches" onclick="generateSwatch()">
+    </div>
+    <div id="colorGrid">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

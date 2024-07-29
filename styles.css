@@ -1,0 +1,35 @@
+body {
+    width: 100%;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 2% auto;
+}
+
+.searchBar > * {
+    margin: 0 1%;
+}
+
+#colorGrid { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+.colorContainer {
+    width: 20%;
+    height: 20vh;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.colorBlock {
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+}
